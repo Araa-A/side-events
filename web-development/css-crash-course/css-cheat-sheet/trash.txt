@@ -1,0 +1,26 @@
+<div class="clr">
+			
+
+		</div>
+		<div class="clr">
+			
+
+		</div>
+		<div class="clr">
+			<h3>Stanza II</h3>
+			<small>Ada Limón</small>
+			<p>When we moved out here together, I kept apologizing
+				for everything, like a poor orphan in the film about my shame.
+				<br>
+				<br>He had to tell me to stop. And for days, (maybe weeks?)
+				I'd hear it in my mind and have to hold it there,
+				stuck like a cockroach under a glass,
+				waiting for someone braver to kill it.
+				<br>
+				<br>Mostly, I enjoy my failings. Until I don't.
+				<br>
+				<br>In the text from my ex about the bus, he sounds almost funny.
+				Like isn't it ironic that I got hit by a bus, when all I ever wanted was to
+				disappear without a trace.</p>
+
+		</div>
