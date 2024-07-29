@@ -34,7 +34,7 @@ digitalWrite(ledPin,LOW);
 delay(dah);
 digitalWrite(ledPin,HIGH);
 delay(dah);
-digitalWrite(13,LOW);
+digitalWrite(ledPin,LOW);
 delay(dah);
 
 //S
