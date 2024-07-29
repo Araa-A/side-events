@@ -1,6 +1,6 @@
 int ledPin=8;
-int dit=100;
-int dah=500;
+int dit=50;
+int dah=150;
 int longW=1000;
 
 void setup() {
