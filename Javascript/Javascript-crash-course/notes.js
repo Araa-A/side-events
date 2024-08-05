@@ -120,7 +120,90 @@ const todos= [
 
 console.log(todos[1].text);
 
+// CONVERTING TO JSON FORMAT
+
 const todoJSON = JSON.stringify(todos);
 console.log(todoJSON);
 
-// LOOPING ARRAYS
+// LOOPING ARRAYS - FOR LOOPS
+
+
+//  FOR LOOPS
+
+	for(let i = 0; i <= 10; i++) {
+/* 
+first parameter: assignment of variable- the iterable
+second parameter: condition that needs to be met
+third parameter: increment i++ adds one to i variable
+runs until the condition is true
+*/
+
+console.log(`For loop number ${i}`);
+}
+
+// WHILE LOOPS
+
+let i = 0
+
+while(i <= 10) {
+	console.log(`While loop number ${i}`);
+	i++;
+
+}
+
+// LOOPING THROUGH ARRAYS
+
+for(let i = 0; i < todos.length; i++) {
+	console.log(`For loop number ${i}`);
+}
+
+for(let i = 0; i < todos.length; i++) {
+	console.log(todos[i].text);
+}
+
+//  FOR OF LOOP
+
+for(let todo of todos) {
+	console.log(todo)
+}
+
+for(let todo of todos) {
+	console.log(todo.text)
+}
+
+for(let todo of todos) {
+	console.log(todo.id)
+}
+
+
+//  HIGH ORDER ARRAY METHODS (Suggested way to do iterations with arrays)
+
+// FOR EACH - LOOPS THROUGH THEM
+todos.forEach(function(todo) {
+	console.log(todo.text);
+});
+
+// MAP - ALLOWS US TO CREATE A NEW ARRAY FROM AN ARRAY
+const todoText = todos.map(function(todo) {
+	return todo.text;
+});
+
+console.log(todoText);
+
+// FILER - ALLOWS US TO CREATE A NEW ARRAY BASED ON A CONDITION
+
+const todoCompleted = todos.filter(function(todo) {
+	return todo.isCompleted === true;
+});
+
+console.log(todoCompleted);
+
+// CHAINING ONTO FILTER METHOD WITH MAPPING FOR ONLY TEXT
+
+const todosCompleted = todos.filter(function(todo) {
+	return todo.isCompleted === true;
+}).map(function(todo){
+	return todo.text;
+});
+
+console.log(todosCompleted);
