@@ -207,3 +207,97 @@ const todosCompleted = todos.filter(function(todo) {
 });
 
 console.log(todosCompleted);
+
+// CONDITIONALS
+const numberTen = '10';
+const numberTwenty = 20;
+const numberFour = 4;
+const numberEleven = 11;
+const numberSix = 6;
+
+// Double equals does not match datatypes, only value
+if(numberTen == 10) {
+	console.log('x is 10 duh')
+}
+
+// Triple equals matches datatypes
+if(numberTen === 10) {
+	console.log('numberTen is 10 duh')
+} else if(numberTwenty > 10) {
+	console.log('numberTwenty is greater than 10, gang')
+} else; {
+	console.log('numberTwenty less than 10')
+}
+
+// OR - ONE of them has to be true
+if(numberFour > 5 || numberEleven > 10) {
+	console.log('number 10 is more than 5 or number 10 is more than 10')
+}
+
+// && - BOTH of them have to be true
+if(numberSix > 5 && numberEleven > 10) {
+	console.log('number 6 is more than 5 AND number 10 is more than 10')
+}
+
+// NESTED IF STATEMENTS 
+
+if(numberTen > 5) {
+	if(numberTwenty > 10){
+		console.log("Ngl this is kinda icky.")
+	}
+}
+
+
+// TURNARY OPPERATIOR - Shorthand If Statement - Used to assign variables based on a condition 
+const colour = numberEleven > 10 ? 'red' : 'blue';
+
+console.log(colour)
+
+// SWITCHES
+
+switch(colour) {
+	case 'red':
+		console.log("Colour is red.");
+		break;
+	case 'blue':
+		console.log("Colour is blue")
+		break;
+	default:
+		console.log("Colour is NOT red or blue.")
+		break;
+}
+
+// FUNCTIONS 
+
+function addNums(num1, num2) {
+	console.log(num1 + num2);
+}
+
+addNums(5,4);
+
+// NaN means Not a Number
+
+function addNums(num1, num2) {
+	console.log(num1 + num2);
+}
+
+addNums();
+
+function addNums(nums1 = 1, nums2 = 1) {
+	return(nums1 + nums2);
+}
+
+console.log(addNums());
+
+// ARROW FUNCTIONS
+
+const addition = (num1 = 5, num2 = 1) => {
+	return num1 + num2
+}
+
+console.log(addition());
+
+
+const subtraction = (num1 = 5, num2 = 1) => console.log(num1 - num2);
+
+subtraction();
