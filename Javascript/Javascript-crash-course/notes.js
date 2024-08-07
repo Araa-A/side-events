@@ -2,6 +2,8 @@
 //console.error("This is a waring")
 //console.warn("This is a warning")
 
+// METHODS ARE A FUNCTION INSIDE OF A CLASS 
+
 // let, const
 // let is reassignable
 // const is well, a constant
@@ -301,3 +303,153 @@ console.log(addition());
 const subtraction = (num1 = 5, num2 = 1) => console.log(num1 - num2);
 
 subtraction();
+
+// OBJECT ORIENTED PROGRAMMING
+
+//Constructor Function
+function People(firstName, lastName, dob) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.dob = new Date(dob);
+	this.getBirthYear = function() {
+		return this.dob.getFullYear();
+	}
+	this.getFullName = function() {
+		return `${this.firstName} ${this.lastName}`; //template strings
+	}
+}
+
+
+// Instantiate Object
+const people1= new People("Gwen", "Stacy", "4-18-2001");
+const people2= new People("Mary Jane", "Watson", "8-19-1993");
+
+
+console.log(people1.getBirthYear());
+console.log(people1.getFullName());
+
+// Prototyping
+function DCFavs(firstName, lastName, dob) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.dob = new Date(dob);
+}
+
+
+DCFavs.prototype.getBirthYear = function() {
+	return this.dob.getFullYear();
+}
+
+DCFavs.prototype.getFullName = function() {
+	return `${this.firstName} ${this.lastName}`; //template strings
+}
+
+
+// Instantiate Object
+const fav1= new DCFavs("Cassandra", "Cain", "1-26-1990");
+const fav2= new DCFavs("Jason Peter", "Todd", "8-16-1990");
+
+
+console.log(fav1.getBirthYear());
+console.log(fav1.getFullName());
+console.log(fav1)
+console.log(fav2)
+
+
+// CLASSES (Syntactic Sugar)
+class DCFavs {
+	constructor(firstName, lastName, dob) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.dob = new Date(dob);
+	}
+	getBirthYear() {
+		return this.dob.getFullYear();
+	}
+	getFullName(){
+		return `${this.firstName} ${this.lastName}`; //template strings
+	}
+}
+
+
+// Instantiate Object
+const favs1= new DCFavs("Cassandra", "Cain", "1-26-1990");
+const favs2= new DCFavs("Jason Peter", "Todd", "8-16-1990");
+
+
+console.log(favs1.getBirthYear());
+console.log(favs1.getFullName());
+console.log(favs1)
+console.log(favs2)
+
+// DOCUMENT OBJECT MODEL = USER INTERFECT
+console.log(window);
+
+//Single Element Selectors
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('h1'));
+
+//Multiple Elements Selectors
+console.log(document.querySelectorAll('.item'));
+
+// Looping through Document Object Models
+const items = document.querySelectorAll('.item');
+items.forEach((item) => console.log(item));
+
+// Manipulating UI
+const ul = document.querySelector('.items');
+
+// ul.remove();
+// ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'Cassandra Cain Batgirl SWEEPS';
+ul.children[1].innerText = 'Jason Peter Todd';
+ul.lastElementChild.innerHTML = '<h4> Timothy Jackson Drake </h4>'
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
+
+// Events
+const btn = document.querySelector('.btn');
+
+// fun events: click, mouseover, mouseout
+btn.addEventListener('mouseover', (e) => {
+	e.preventDefault();
+	document.querySelector('#my-form').style.background = '#ccc';
+	document.querySelector('body').classList.add('bg-dark');
+	document.querySelector('.items').lastElementChild.innerHTML = '<h1>Cassandra CAIN</h1>';
+});
+
+// function onSubmit(e){
+	//e.preventDefault();
+
+	//console.log(nameInput.value)
+//} 
+
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+
+myForm.addEventListener('submit', onSubmit)
+
+function onSubmit(e){
+	e.preventDefault();
+
+	if(nameInput.value === '' || emailInput.value === '') {
+		msg.classList.add('error');
+		msg.innerHTML = 'Please enter all fields';
+
+		setTimeout(() => msg.remove(), 3000);
+	} else {
+		const li = document.createElement('li');
+		li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
+
+		userList.appendChild(li);
+
+		// Clear fields
+		nameInput.value = '';
+		emailInput.value = '';
+	}
+}
