@@ -44,13 +44,13 @@
 
 <br>
 
-<ol>
+<ul>
 <li>Binary counter with four LEDs</li>
 <li>Getting LEDs to blink at varying times
 </li>
 <li>Reading analogue voltage</li>
 <li>SOS with LEDs</li>
-</ol>
+</ul>
 
 
 
