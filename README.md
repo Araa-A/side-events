@@ -1,6 +1,6 @@
 <h1 align="left"> Welcome to side events! </h1> 
 
-<h3 align="left"> Small side projects involding web development and coding competition snippets </h3>
+<h3 align="left"> Small side projects involving web development and coding competition snippets </h3>
 <p align="left">(Web Development practice, Arduino practice, KL Coding Cup, Malaysian Coding Challenge etc)</p>
 
 <br>
@@ -27,7 +27,9 @@
 
 ---
 
+
 ![REDHOODBLURRYLANDING](https://github.com/user-attachments/assets/f911b4fc-f5c1-40f7-9511-16f5698cdff5)
+
 
 
 <h3 align="left">Mock Poetry Website</h3>
