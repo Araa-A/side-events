@@ -1,9 +1,9 @@
 <h1 align="left"> Welcome to side events! </h1> 
 
-<h2 align="left"> Small side projects involding web development and coding competition snippets </h2>
-<p align="left">(KL Coding Cup, Malaysian Coding Challenge, Travesy Media tutorials)</p>
+<h3 align="left"> Small side projects involding web development and coding competition snippets </h3>
+<p align="left">(Web Development practice, Arduino practice, KL Coding Cup, Malaysian Coding Challenge etc)</p>
 
-
+<br>
 
 <h2 align="left"> Web Development </h2> 
 
@@ -27,7 +27,7 @@
 
 ---
 
-![redhoodblurryloading](https://github.com/user-attachments/assets/903ff76d-c934-4ed9-96e9-20cc65726324)
+![REDHOODBLURRYLANDING](https://github.com/user-attachments/assets/f911b4fc-f5c1-40f7-9511-16f5698cdff5)
 
 
 <h3 align="left">Mock Poetry Website</h3>
