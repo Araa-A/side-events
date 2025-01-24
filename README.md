@@ -43,6 +43,7 @@
 
 <h2 align="left"> Arduino </h2> 
 ❗ Not every project and lesson has been uploaded
+<br>
 
 - Binary counter with four LEDs
 - Getting LEDs to blink at varying times
