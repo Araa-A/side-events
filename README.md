@@ -20,8 +20,6 @@
 
 
 ![FLAVOURSPICKER](https://github.com/user-attachments/assets/94cb7dfb-617b-4d89-9948-8e39a6abf606)
-![BATMANPICKER](https://github.com/user-attachments/assets/a81a9732-376b-4550-8c32-045439ebe825)
-
 
 <h3 align="left">Blurred Loading Page</h3>
 
@@ -42,12 +40,17 @@
 
 
 <h2 align="left"> Arduino </h2> 
-❗ Not every project and lesson has been uploaded
+<p>❗ Not every project and lesson has been uploaded</p>
+
 <br>
 
-- Binary counter with four LEDs
-- Getting LEDs to blink at varying times
-- Reading analogue voltage
-- SOS with LEDs
+<ol>
+<li>Binary counter with four LEDs</li>
+<li>Getting LEDs to blink at varying times
+</li>
+<li>Reading analogue voltage</li>
+<li>SOS with LEDs</li>
+</ol>
+
 
 
