@@ -1,9 +1,9 @@
 <h1 align="left"> Welcome to side events! </h1> 
 
 <h2 align="left"> Small side projects involding web development and coding competition snippets </h2>
-<h3 align="left">(KL Coding Cup, Malaysian Coding Challenge, Travesy Media tutorials)</h3>
+<p align="left">(KL Coding Cup, Malaysian Coding Challenge, Travesy Media tutorials)</p>
 
----
+
 
 <h2 align="left"> Web Development </h2> 
 
